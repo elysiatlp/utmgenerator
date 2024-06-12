@@ -1,9 +1,13 @@
+
+
 html{
     width: 100%;
     max-width: 1920px;
 }
+
 body {
     background-color: #F8E2CB;
+    overflow-y: auto;
 }
 
 h1 {
