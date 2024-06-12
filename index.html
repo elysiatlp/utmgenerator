@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UTM Generator</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" type="image/x-icon" href="#">
+    </head>
+    <body>
+        <main>
+            <div id="formdiv">
+                <h1>UTM Generator</h1>
+                <section id="generateutmform">
+                    <form id="UTM">
+                        <label for="name">Name (optional):</label>
+                             <input name="name" class="name input" type="text">
+                        
+                        <label for="date">Date:</label>
+                            <input name="date" class="date input" type="date">
+                       
+                       <label for="product">Product:</label>
+                        <select name="product" class="product input">
+                            <option class="placeholder" value="" disabled selected>Select a product</option>
+                            <option value="PM1">PM1</option>
+                            <option value="IT2">IT2</option>
+                            <option value="CI4">CI4</option>
+                        </select>
+                        <label for="source">Source:</label>
+                        <select name="source" class="source input">
+                            <option class="placeholder" value="" disabled selected>Select a source</option>
+                            <option value="tlp">tlp</option>
+                            <option value="totaljobs">totaljobs</option>
+                        </select>
+                        <label for="medium">Medium:</label>
+                        <select name="medium" class="medium input">
+                            <option class="placeholder" value="" disabled selected>Select a medium</option>
+                            <option value="email">email</option>
+                            <option value="social-organic">social-organic</option>
+                        </select>
+                        <button id="generatebutton" type="submit" form="UTM" formtarget="#" formaction="#">Generate UTM</button>
+                    </form>
+                </section>
+                <section id="outputsection">
+                    <div id="output">
+
+                    </div>
+                    <button id="copybutton" disabled="true">Copy UTM</button>
+                </section>
+            </div> 
+        </main>
+        <script src="script.js"></script>
+        <footer>
+            <p class="footertxt">Made by Elysia Nicholls</p>
+        </footer>
+    </body> 
+</html>
