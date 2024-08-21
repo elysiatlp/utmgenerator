@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const copyButton = document.getElementById('copybutton');
     const confirmationLabel = document.createElement('p');
     confirmationLabel.className = 'confirmation-label';
-    outputsection.appendChild(confirmationLabel);
+    utmoutputsection.appendChild(confirmationLabel);
 
     form.addEventListener('submit', function (event) {
         event.preventDefault();  // Prevent form submission
