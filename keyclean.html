@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword List Cleaner</title> 
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="https://www.learningpeople.com/favicon-32x32.png">
+</head>
+<body>
+    <main>
+        <nav id="mainnav">
+            <a href="index.html" class="navitem">UTM Generator</a>
+            <a href="keyclean.html" class="navitem">Keyword List Cleaner</a>
+        </nav>
+        <div id="formdiv">
+            <h1>Keyword List Cleaner</h1>
+            <section id="keycleanform">
+                <form id="keyclean">
+                    <textarea name="fullkeywords" class="keywordinput" placeholder="Paste your keywords here..."></textarea>
+                    <button id="cleanbutton" type="submit" form="keyclean" formtarget="#" formaction="#">Clean List</button>
+                </form>
+            </section>
+            <section id="keywordoutputsection">
+                <div class="output" id="keyoutput">
+
+                </div>
+                <button id="keycopybutton" disabled="true">Copy keywords</button>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p class="footertxt">Made by Elysia Nicholls</p>
+    </footer>
+    
+</body>
+</html>
