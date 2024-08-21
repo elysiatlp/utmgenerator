@@ -18,6 +18,7 @@ h1 {
     font-family: "Lustria Regular",sans-serif !important;
     font-size: 45px;
     padding: 0px;
+    margin: 20px 0px;
 }
 
 * {
@@ -59,11 +60,11 @@ div#formdiv {
 }
 .keywordinput {
     width: 100%;
-    max-width: 300px ;
-    max-height: 100px;
+    max-width: 500px ;
+    max-height: 150px;
     min-width: 300px;
-    min-height: 100px;
-    height:100px;
+    min-height: 150px;
+    height:150px;
     padding: 10px;
     display: block;
     margin: 2px auto 10px auto;
@@ -80,8 +81,8 @@ div#formdiv {
 
 .keywordinput-wrapper {
     width: 100%;
-    max-width: 300px;
-    height: 100px;
+    max-width: 500px;
+    height: 150px;
     padding: 0;
     margin: 2px auto 10px auto;
     border-radius: 25px; /* Match the input border radius */
@@ -122,8 +123,60 @@ div#formdiv {
     border-radius: 25px;
     border-width: 0px;
     padding: 10px;
-    overflow: hidden;
+    overflow: auto;
     overflow-wrap: break-word;
+}
+
+/* Custom Scrollbar Styling for WebKit Browsers */
+.output::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar */
+    height: 10px; /* Height for horizontal scrollbars */
+    border-radius: 40px;
+}
+
+.output::-webkit-scrollbar-track {
+    background: transparent; /* No background for the track */
+    border-radius: 40px; /* Round the track corners */
+}
+
+.output::-webkit-scrollbar-thumb {
+    background: transparent; /* Color of the scrollbar handle */
+    border-radius: 40px; /* Round the handle corners */
+}
+
+.keyoutput {
+    background-color:white;
+    width: 100% !important;
+    max-width: 500px !important;
+    height: 150px !important;
+    border: 0px;
+    border-color: black;
+    border-style: solid;
+    display: block;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    border-radius: 25px;
+    border-width: 0px;
+    padding: 10px;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+/* Custom Scrollbar Styling for WebKit Browsers */
+.keyoutput::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar */
+    height: 10px; /* Height for horizontal scrollbars */
+    border-radius: 40px;
+}
+
+.keyoutput::-webkit-scrollbar-track {
+    background: transparent; /* No background for the track */
+    border-radius: 40px; /* Round the track corners */
+}
+
+.keyoutput::-webkit-scrollbar-thumb {
+    background: transparent; /* Color of the scrollbar handle */
+    border-radius: 40px; /* Round the handle corners */
 }
 
 button {
@@ -165,6 +218,7 @@ button:disabled {
 
 .confirmation-label {
     color: #e9a353;
+    margin: 0px;
 }
 
 nav#mainnav{
